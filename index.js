@@ -118,18 +118,7 @@ client.on('messageCreate' , async(message) => {
 })
 
 
-
-const { joinVoiceChannel } = require('@discordjs/voice');
-client.on('ready', async () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  const targetGuild = client.guilds.cache.find(guild => guild.id === "1142202299868008538");
-  const targetChannel = targetGuild.channels.cache.find(channel => channel.id === "1196020861782732880");
-  const connection = joinVoiceChannel({
-    channelId: targetChannel.id,
-    guildId: targetGuild.id,
-    adapterCreator: targetGuild.voiceAdapterCreator,
-  });
-});
+//
 
 					 
 //welcome
